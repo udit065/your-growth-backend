@@ -19,3 +19,6 @@ Thumbs.db
 
 # Build
 dist/
+
+# Local data backups (personal data)
+backups/
