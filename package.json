@@ -1,18 +1,27 @@
 {
-  "name": "backend",
+  "name": "your-growth-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "REST API for the Your Growth daily check-in app",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Udit Yadav",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mongoose": "^8.17.1"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "supertest": "^7.3.2"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
